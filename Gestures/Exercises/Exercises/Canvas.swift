@@ -23,7 +23,6 @@ class Canvas: UIView {
         context?.setStrokeColor(UIColor.black.cgColor)
 
         for line in lines {
-            line.lineWidth = 5.0
             line.stroke()
         }
     }
@@ -36,6 +35,7 @@ class Canvas: UIView {
         switch sender.state {
         case .began:
             currentLine = UIBezierPath()
+            currentLine?.lineWidth = 5.0
             currentLine?.move(to: point)
             lines.append(currentLine!)
 
