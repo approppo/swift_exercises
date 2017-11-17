@@ -21,9 +21,9 @@ class Canvas: UIView {
     override func draw(_ rect: CGRect) {
         let context = UIGraphicsGetCurrentContext()
         context?.setStrokeColor(UIColor.black.cgColor)
-        context?.setLineWidth(2.0)
 
         for line in lines {
+            line.lineWidth = 5.0
             line.stroke()
         }
     }
