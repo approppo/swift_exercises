@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         let session = URLSession(configuration: config)
         if let url = URL(string: "http://localhost:8888/data.json") {
             // tag::task_codable[]
-            let task = session.dataTask(with: url) { data, response, error in
+            let task = session.dataTask(with: url) { [unowned self] data, response, error in
                 do {
                     // This code is executed in the background
                     let decoder = JSONDecoder()
