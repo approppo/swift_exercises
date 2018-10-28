@@ -18,3 +18,23 @@ country1.translate()
 country2.translate()
 // end::complex[]
 
+// tag::exhaustive[]
+enum MessageType: String {
+    case INFO = "This is an Info"
+    case WARNING = "This is a Warning"
+    case ERROR = "This is an Error!"
+}
+
+func sayIt(_ messageType: MessageType) {
+    switch messageType {
+    case .INFO, .WARNING:
+        print("\(messageType): \(messageType.rawValue)")
+    case .ERROR:
+        print("ALERT!!! \(messageType): \(messageType.rawValue)")
+    }
+}
+
+sayIt(.INFO)
+sayIt(.WARNING)
+sayIt(.ERROR)
+// end::exhaustive[]

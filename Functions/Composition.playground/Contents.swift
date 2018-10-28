@@ -52,14 +52,14 @@ func lowercase(_ string: String) -> String {
 }
 
 func sort(_ string: String) -> String {
-    var arr = Array(string.characters)
+    var arr = Array(string)
     arr.sort()
     return String(arr)
 }
 // end::examples[]
 
 func uniq(_ string: String) -> String {
-    let arr = Array(string.characters)
+    let arr = Array(string)
     let set = Set(arr)
     return String(set)
 }
@@ -67,7 +67,7 @@ func uniq(_ string: String) -> String {
 // Adapted from
 // http://stackoverflow.com/a/24029847
 func shuffle(_ string: String) -> String {
-    var arr = Array(string.characters)
+    var arr = Array(string)
     let c = arr.count
     guard c > 1 else { return string }
 

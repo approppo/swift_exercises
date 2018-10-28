@@ -34,4 +34,3 @@ func greet(_ country: Country) {
 greet(country1)
 greet(country2)
 // end::usage[]
-

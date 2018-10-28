@@ -9,7 +9,7 @@ parameterName(param: "First")
 
 // tag::many[]
 func manyParameters(first: String, second: Double?, third: Bool) {
-    print("Parameters are: '\(first)', '\(second)', '\(third)'")
+    print("Parameters are: '\(first)', '\(String(describing: second))', '\(third)'")
 }
 
 manyParameters(first: "First", second: 123.45, third: false)

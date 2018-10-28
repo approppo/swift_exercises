@@ -29,7 +29,6 @@ func takeTwoReturnNone(first: Int, second: Double) {
 // end::other[]
 
 
-
 // tag::tuple[]
 func multipleOutput() -> (String, Int) {
     return ("Stan", 35)
