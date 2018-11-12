@@ -52,9 +52,6 @@ class Canvas: UIView {
             print("possible?")
 
         }
-
-        setNeedsDisplay()
-
     }
     // end::pan[]
 }

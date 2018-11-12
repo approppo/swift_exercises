@@ -13,7 +13,7 @@ class Controller : UIViewController {
         sw.center = CGPoint(x: 50, y: 150)
         sw.addTarget(self, action: #selector(action), for: .valueChanged)
 
-        let info = UIButton(type: .infoLight)
+        let info = UIButton(type: .contactAdd)
         info.center = CGPoint(x: 50, y: 200)
         info.addTarget(self, action: #selector(action), for: .touchUpInside)
 

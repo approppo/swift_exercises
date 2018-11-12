@@ -47,9 +47,11 @@ class Controller : UIViewController {
     @objc func action(sender: UIControl) {
         label.text = "Interaction with: \(type(of: sender))"
     }
-    
-    @objc func dateChanged(sender: UIDatePicker) {
-        label.text = sender.date.description
+
+    @objc func dateChanged(sender: UIControl) {
+        if let picker = sender as? UIDatePicker {
+            label.text = picker.date.description
+        }
     }
 }
 

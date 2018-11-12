@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Exercises
+//  StoryB2018
 //
-//  Created by Adrian Kosmaczewski on 09.02.17.
-//  Copyright © 2017 Adrian Kosmaczewski. All rights reserved.
+//  Created by Roger Kislig on 12.11.18.
+//  Copyright © 2018 approppo. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let nav = UINavigationController()
+        let firstVC = WhiteViewController()
+        nav.viewControllers = [firstVC]
+        
+        self.window?.rootViewController = nav
+        
         return true
     }
 

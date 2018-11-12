@@ -39,7 +39,7 @@ class InfoPanelView: UIView {
         
         spinningWheel.center = CGPoint(x: w - 30, y: h / 2)
         spinningWheel.hidesWhenStopped = true
-        spinningWheel.activityIndicatorViewStyle = .gray
+        spinningWheel.style = .gray
         
         addSubview(label)
         addSubview(spinningWheel)
